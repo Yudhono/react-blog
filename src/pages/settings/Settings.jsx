@@ -9,7 +9,7 @@ export default function Settings() {
           <span className="settingsUpdateTitle">Update Your Account</span>
           <span className="settingsUpdateTitle">Delete Account</span>
         </div>
-        <div className="form settingForm">
+        <div className="settingsForm">
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
@@ -19,8 +19,15 @@ export default function Settings() {
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
             </label>
-            <input type="file" id="fileInput" />
+            <input type="file" id="fileInput" style={{ display: "none" }} />
           </div>
+          <label>Username</label>
+          <input type="text" placeholder="yudhono" />
+          <label>Email</label>
+          <input type="Email" placeholder="yudhono@gmail.com" />
+          <label>Password</label>
+          <input type="password" />
+          <button className="settingsSubmit">Update</button>
         </div>
       </div>
       <Sidebar />

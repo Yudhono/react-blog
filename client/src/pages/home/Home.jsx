@@ -9,6 +9,7 @@ export default function home() {
       <Header />
       <div className="home">
         <Posts />
+        tes
         <Sidebar />
       </div>
     </>
